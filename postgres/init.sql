@@ -15,13 +15,13 @@ CREATE TABLE dw.dim_brewery_type (
     brewery_type VARCHAR(50)
 );
 
--- Dimensão: Nome da cervejaria (nova)
+-- Dimensão: Nome da cervejaria
 CREATE TABLE dw.dim_brewery_name (
     brewery_name_id SERIAL PRIMARY KEY,
     brewery_name VARCHAR(200) UNIQUE
 );
 
--- Dimensão: Tempo (nova)
+-- Dimensão: Tempo
 CREATE TABLE dw.dim_time (
     time_id SERIAL PRIMARY KEY,
     full_date DATE UNIQUE,
