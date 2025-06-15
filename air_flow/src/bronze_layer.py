@@ -12,3 +12,7 @@ def fetch_raw_data():
         json.dump(data, f)
 
     print("[BRONZE] Dados brutos foram salvos em /files/bronze/breweries_raw.json")
+
+
+if __name__ == "__main__":
+    fetch_raw_data()

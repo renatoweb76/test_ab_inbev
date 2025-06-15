@@ -16,3 +16,6 @@ def transform_and_partition():
         group.to_parquet(f'{output_dir}/state={state}/data.parquet')
 
     print("[SILVER] Dados transformados e salvos na camada Silver.")
+
+if __name__ == "__main__":
+    transform_and_partition()
