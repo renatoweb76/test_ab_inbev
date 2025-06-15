@@ -10,3 +10,5 @@ def fetch_raw_data():
     os.makedirs('/files/bronze/', exist_ok=True)
     with open('/files/bronze/breweries_raw.json', 'w') as f:
         json.dump(data, f)
+
+    print("[BRONZE] Dados brutos foram salvos em /files/bronze/breweries_raw.json")

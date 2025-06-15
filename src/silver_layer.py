@@ -14,3 +14,5 @@ def transform_and_partition():
     os.makedirs(output_dir, exist_ok=True)
     for state, group in df.groupby('state'):
         group.to_parquet(f'{output_dir}/state={state}/data.parquet')
+
+    print("[SILVER] Dados transformados e salvos na camada Silver.")
